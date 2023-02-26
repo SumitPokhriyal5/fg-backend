@@ -13,6 +13,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.get('/',(req,res)=>{
+  res.send('Home page')
+})
+
 app.use("/users", userRouter);
 app.use('/products',ProductsRoute);
 app.use('/orders',OrderRouter);
