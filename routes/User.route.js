@@ -83,7 +83,7 @@ userRouter.post("/login", async (req, res) => {
         user.isActive = true;
         user.loginTime = loginTime;
         user.save();
-        res.send({ msg: "Login Successfull", token: token });
+        res.send({ msg: "Login Successfull", token: token,isAdmin:user.isAdmin });
         console.log(user);
       } else {
         res.status(401).send("Incorrect password");
