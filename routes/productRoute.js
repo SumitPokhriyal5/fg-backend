@@ -86,7 +86,7 @@ ProductsRoute.get("/:id", async (req, res) => {
 ProductsRoute.get("/", async (req, res) => {
   const query=req.body
   const qNew = req.query.new;
-  const qCategory = req.query.category;
+  const qCategory = req.query.categories;
   console.log({qCategory})
   const price=req.query.price
   const color=req.query.color
