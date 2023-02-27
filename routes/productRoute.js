@@ -94,15 +94,15 @@ ProductsRoute.get("/", async (req, res) => {
       }
       else if(color!==undefined){
         products=await ProductModel.find({color})
-        products.reverse();
+        // products.reverse();
       }
       else if(price!==undefined){
         products=await ProductModel.find({price})
-        products.reverse();
+        // products.reverse();
       }
       else{
         products=await ProductModel.find()
-        products.reverse();
+        // products.reverse();
       }
     }
     
