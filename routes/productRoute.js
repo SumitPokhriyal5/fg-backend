@@ -90,7 +90,7 @@ ProductsRoute.get("/", async (req, res) => {
   console.log({qCategory})
   const price=req.query.price
   const color=req.query.color
-  const sort=req.query.sort
+  const sort=req.query.order
   try {
     let products;
    
