@@ -120,6 +120,9 @@ ProductsRoute.get("/", async (req, res) => {
       else if(price!==undefined){
         products=await ProductModel.find({price})
       }
+      else {
+        products=await ProductModel.find()
+      }
     }
     
    if(sort!==undefined){
